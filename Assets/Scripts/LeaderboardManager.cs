@@ -26,8 +26,8 @@ public class LeaderboardManager : MonoBehaviour
     public float meDetachDuration = 0.8f;
     public Vector3 meDetachedScale = new Vector3(8.3f, 1.6f, 0.1f);
     public float meFlightDuration = 0.8f;
-    public float scrollAnimationDuration = 1.5f;
     public float meLandingDelay = 0.25f;
+    public float scrollAnimationDuration = 3.5f;
 
     [Header("References")]
     public Transform updateButton;
@@ -217,7 +217,7 @@ public class LeaderboardManager : MonoBehaviour
             float deltaY = scrollY - previousScrollY;
             previousScrollY = scrollY;
             UpdateRowsForScrollDelta(deltaY);
-        }).SetEase(Ease.InOutSine);
+        }).SetEase(Ease.InOutCubic);
 
         yield return scrollTween.WaitForCompletion();
         if (meStatsTween != null && meStatsTween.IsActive())
