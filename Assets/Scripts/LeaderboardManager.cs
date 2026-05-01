@@ -21,12 +21,12 @@ public class LeaderboardManager : MonoBehaviour
     public float rowHeight = 1.6f;
     public int extraRowsAbove = 2;
     public int extraRowsBelow = 2;
-    public float gapAnimationDuration = 0.6f;
-    public float meInsertAnimationDuration = 0.3f;
-    public float meDetachDuration = 0.24f;
+    public float gapAnimationDuration = 0.8f;
+    public float meInsertAnimationDuration = 0.5f;
+    public float meDetachDuration = 0.8f;
     public Vector3 meDetachedScale = new Vector3(8.3f, 1.6f, 0.1f);
-    public float meFlightDuration = 0.6f;
-    public float scrollAnimationDuration = 0.6f;
+    public float meFlightDuration = 0.8f;
+    public float scrollAnimationDuration = 1.5f;
 
     [Header("References")]
     public Transform updateButton;

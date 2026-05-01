@@ -222,12 +222,12 @@ MonoBehaviour:
   rowHeight: 1.6
   extraRowsAbove: 2
   extraRowsBelow: 2
-  gapAnimationDuration: 0.35
-  meInsertAnimationDuration: 0.3
-  meDetachDuration: 0.24
+  gapAnimationDuration: 0.8
+  meInsertAnimationDuration: 0.5
+  meDetachDuration: 0.8
   meDetachedScale: {x: 8.3, y: 1.6, z: 0.1}
-  meFlightDuration: 0.6
-  scrollAnimationDuration: 0.6
+  meFlightDuration: 0.8
+  scrollAnimationDuration: 1
   updateButton: {fileID: 543733117}
 --- !u!4 &534656301
 Transform:
