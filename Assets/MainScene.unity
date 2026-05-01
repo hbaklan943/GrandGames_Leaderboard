@@ -227,7 +227,8 @@ MonoBehaviour:
   meDetachDuration: 0.8
   meDetachedScale: {x: 8.3, y: 1.6, z: 0.1}
   meFlightDuration: 0.8
-  scrollAnimationDuration: 1
+  meLandingDelay: 0.25
+  scrollAnimationDuration: 3.5
   updateButton: {fileID: 543733117}
 --- !u!4 &534656301
 Transform:
