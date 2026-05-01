@@ -27,6 +27,7 @@ public class LeaderboardManager : MonoBehaviour
     public Vector3 meDetachedScale = new Vector3(8.3f, 1.6f, 0.1f);
     public float meFlightDuration = 0.8f;
     public float scrollAnimationDuration = 1.5f;
+    public float meLandingDelay = 0.25f;
 
     [Header("References")]
     public Transform updateButton;
@@ -147,6 +148,8 @@ public class LeaderboardManager : MonoBehaviour
         PrepareFloatingMeRow();
         RefreshVisibleRowsForCurrentSlots();
         yield return AnimateRowsContinuously();
+        if (meLandingDelay > 0f)
+            yield return new WaitForSeconds(meLandingDelay);
         yield return AnimateMeIntoFinalPosition();
         _isMeFloating = false;
         NormalizeRowBindingsAfterMeLands();
